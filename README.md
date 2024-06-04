@@ -1,11 +1,13 @@
-# my_blog
-my_blog is a CRUD (Create, Read, Update, Delete) application built with Flask. This application allows users to register and login to their accounts. Users can also create, read, update, and delete blog posts. Additionally, users can update their personal information and profile pictures.
+# My Blog
+
+My Blog is a web application built with Flask. It allows users to create, read, update, and delete blog posts. Additionally, users can register accounts, log in, and manage their profiles. This application uses SQLite and SQLAlchemy to store and retrieve user and post data. The application also ensures that no two users have the same email or username, and users may also not update their information to existing emails or usernames.
 
 ## Features
-- **User Authentication**: Register, login, and logout functionality.
-- **User Profile Management**: Update username, email, and profile picture.
-- **Blog Post Management**: Create, view, edit, and delete blog posts.
-- **Responsive Design**: Built with Bootstrap for a clean, simple, and responsive UI
+
+- **User Authentication**: Users can register accounts, log in, and log out.
+- **Profile Management**: Users can update their profile information and profile picture.
+- **Blog Post Management**: Users can create, read, update, and delete blog posts.
+- **Responsive Design**: The application is built with Bootstrap for a mobile-friendly experience.
 
 ## Getting Started
 
@@ -19,89 +21,49 @@ my_blog is a CRUD (Create, Read, Update, Delete) application built with Flask. T
 
 ### Installation
 
-1. **Clone the repository**:
-    ```sh
+1. Clone the repository:
+    ```bash
     git clone https://github.com/yourusername/my_blog.git
     cd my_blog
     ```
 
-2. **Create a virtual environment**:
-    ```sh
+2. Create a virtual environment:
+    ```bash
     python -m venv venv
     ```
 
-3. **Activate the virtual environment**:
+3. Activate the virtual environment:
     - On Windows:
-        ```sh
+        ```bash
         venv\Scripts\activate
         ```
     - On macOS/Linux:
-        ```sh
+        ```bash
         source venv/bin/activate
         ```
 
-4. **Install dependencies**:
-    ```sh
+4. Install dependencies:
+    ```bash
     pip install -r requirements.txt
     ```
 
-5. **Set up the database**:
-    ```sh
+5. Set up the database:
+    ```bash
     flask db init
     flask db migrate -m "Initial migration."
     flask db upgrade
     ```
 
-6. **Run the application**:
-    ```sh
+6. Run the application:
+    ```bash
     flask run
     ```
 
 ## Usage
 
-- **Home Page**: View recent blog posts.
-- **Register/Login**: Create an account or log into an existing account.
-- **Profile Page**: View and update your profile.
-- **Create Post**: Write and publish a new blog post.
-- **Edit/Delete Post**: Manage your existing blog posts.
-
-## Folder Structure
-
-my_blog/
-├── instance/
-│   └── database.db
-├── my_blog/
-│   ├── __init__.py
-│   ├── models.py
-│   ├── config.py
-│   ├── forms.py
-│   ├── main/
-│   │   ├── __init__.py
-│   │   ├── routes.py
-│   ├── posts/
-│   │   ├── __init__.py
-│   │   ├── routes.py
-│   ├── users/
-│   │   ├── __init__.py
-│   │   ├── routes.py
-│   ├── templates/
-│   │   ├── layout.html
-│   │   ├── home.html
-│   │   ├── login.html
-│   │   ├── register.html
-│   │   ├── account.html
-│   │   └── post.html
-│   └── static/
-│       ├── main.css
-│       └── profile_pics/
-├── migrations/
-├── venv/
-├── run.py
-└── requirements.txt
-
-
-
-
-
-
+- Navigate to the home page to view recent blog posts.
+- Register for an account or log in if you have an existing account.
+- Update your profile information and profile picture on the account page.
+- Create a new blog post or edit/delete existing ones.
+- Log out when you're done.
 
