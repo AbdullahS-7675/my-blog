@@ -69,7 +69,7 @@ my_blog is a CRUD (Create, Read, Update, Delete) application built with Flask. T
 
 my_blog/
 ├── instance/
-│   └── site.db
+│   └── database.db
 ├── my_blog/
 │   ├── __init__.py
 │   ├── models.py
@@ -94,8 +94,11 @@ my_blog/
 │   └── static/
 │       ├── main.css
 │       └── profile_pics/
+├── migrations/
+├── venv/
 ├── run.py
 └── requirements.txt
+
 
 
 
